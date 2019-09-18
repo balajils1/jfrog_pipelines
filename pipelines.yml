@@ -58,7 +58,7 @@ pipelines:
          # nodePool: aws-demo-pool
           targetRepository:docker-local
           integrations:
-            - name: Art1
+             - name: Art1
           inputSteps:
             - name: docker_build
             
