@@ -36,7 +36,7 @@
       countryCodes:
         - IN
 
-pipelines: 
+pipelines:
   - name: demo_docker
     steps:
       - name: docker_build
