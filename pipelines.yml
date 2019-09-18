@@ -45,7 +45,7 @@ pipelines:
          # nodePool: aws-demo-pool
           dockerFileLocation: .
           dockerFileName: Dockerfile
-          dockerImageName: '35.244.19.217:8081/docker-stage-local/deepika'
+          dockerImageName: '35.244.19.217:8081/docker-stage-local/balaji'
           dockerImageTag: myImg_$pipeline_name.$run_number
           integrations:
             - name: Art1
@@ -57,8 +57,8 @@ pipelines:
         configuration:
          # nodePool: aws-demo-pool
           targetRepository:docker-local
-          integrations:
-             - name: Art1
+         integrations:
+           - name: Art1
           inputSteps:
             - name: docker_build
             
