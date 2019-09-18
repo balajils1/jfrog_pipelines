@@ -41,7 +41,7 @@
          # nodePool: aws-demo-pool
            dockerFileLocation: .
            dockerFileName: Dockerfile
-           dockerImageName: '35.244.19.217:8081/docker-local/demo'
+           dockerImageName: '35.244.19.217:8081/docker/demo'
            dockerImageTag: myImg_$pipeline_name.$run_number
            integrations:
              - name: Art1
