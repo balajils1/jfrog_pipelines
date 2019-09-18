@@ -31,6 +31,7 @@
       siteName: "*"
       countryCodes:
         - IN
+
 pipelines:
   - name: demo_docker
     steps:
