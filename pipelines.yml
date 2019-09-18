@@ -42,7 +42,7 @@
            dockerFileLocation: .
            dockerFileName: Dockerfile
            dockerImageName: '35.244.19.217:8081/docker/demo'
-           dockerImageTag: myImg_$pipeline_name.$run_number
+           dockerImageTag: $pipeline_name.$run_number
            integrations:
              - name: Art1
            inputResources:
@@ -51,7 +51,7 @@
          type: DockerPush
          configuration:
          # nodePool: aws-demo-pool
-           targetRepository: docker-local
+           targetRepository: docker
            integrations:
              - name: Art1
            inputSteps:
