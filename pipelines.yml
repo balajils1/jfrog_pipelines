@@ -1,4 +1,4 @@
-resources:
+  resources:
   - name: docker_build_repo
     type: GitRepo
     configuration:
@@ -45,7 +45,7 @@ pipelines:
          # nodePool: aws-demo-pool
           dockerFileLocation: .
           dockerFileName: Dockerfile
-          dockerImageName: '35.244.19.217:8081/docker-stage-local/balaji'
+          dockerImageName: '35.244.19.217:8081/docker-stage-local/demo'
           dockerImageTag: myImg_$pipeline_name.$run_number
           integrations:
             - name: Art1
@@ -56,9 +56,9 @@ pipelines:
         type: DockerPush
         configuration:
          # nodePool: aws-demo-pool
-          targetRepository:docker-local
-         integrations:
-           - name: Art1
+          targetRepository: test-docker-local
+          integrations:
+            - name: Art1
           inputSteps:
             - name: docker_build
             
@@ -109,4 +109,4 @@ pipelines:
             - name: signed_release_bundle_docker_build
             - name: distribution_rule_docker_build
           integrations: 
-            - name: dist  
+            - name: dist   
