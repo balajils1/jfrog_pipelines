@@ -64,6 +64,14 @@
              - name: docker_push
            outputResources:
              - name: docker_build_info
+       - name: scan
+         type: XrayScan
+         configuration:
+           #inherits from bash
+           inputResources:
+             - name: docker_build_info
+               trigger: true
+           waitUntilFinish: true
        - name: bundle_docker
          type: CreateReleaseBundle
          configuration:
