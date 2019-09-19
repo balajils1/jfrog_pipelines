@@ -102,6 +102,8 @@
            integrations:
              - name: dist
          execution:
-           onExecute:
-             - sleep 30
+           onStart:
+             - echo "Preparing for work..."
+           onSuccess:
+             - echo "Job well done!"
                
