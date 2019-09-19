@@ -101,3 +101,7 @@
              - name: distribution_rule_docker_build
            integrations:
              - name: dist
+         execution:
+           onExecute:
+             - sleep 30
+               
