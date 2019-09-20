@@ -2,7 +2,7 @@
    - name: docker_build_repo1
      type: GitRepo
      configuration:
-       path: balajils1/12345
+       path: balajils1/newtest
        gitProvider: balaji
    - name: docker_build_info
      type: BuildInfo
