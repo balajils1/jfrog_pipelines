@@ -2,7 +2,7 @@
    - name: docker_build_repo
      type: GitRepo
      configuration:
-       path: balajils1/Sampleproject
+       path: balajils1/12345
        gitProvider: balaji
    - name: docker_build_info
      type: BuildInfo
@@ -40,7 +40,7 @@
          configuration:
          # nodePool: aws-demo-pool
            dockerFileLocation: .
-           dockerFileName: Dockefile
+           dockerFileName: Dockerfile
            dockerImageName: '35.244.19.217:8081/docker/demossl12'
            dockerImageTag: $pipeline_name.$run_number
            integrations:
