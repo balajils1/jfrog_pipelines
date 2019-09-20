@@ -14,13 +14,13 @@
      type: ReleaseBundle
      configuration:
        sourceDistribution: dist
-       name: docker-local
+       name: docker-prod
        version: v1.0
    - name: signed_release_bundle_docker_build
      type: ReleaseBundle
      configuration:
        sourceDistribution: dist
-       name: docker-local
+       name: docker-prod
        version: v1.0
    - name: distribution_rule_docker_build
      type: DistributionRule
@@ -33,7 +33,7 @@
          - IN
         
  pipelines:
-   - name: demo_docker
+   - name: demossl_docker
      steps:
        - name: docker_build
          type: DockerBuild
