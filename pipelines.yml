@@ -46,7 +46,7 @@
            integrations:
              - name: Art1
            inputResources:
-             - name: docker_build_repo1
+             - name: docker_build_repo2
        - name: docker_push
          type: DockerPush
          configuration:
