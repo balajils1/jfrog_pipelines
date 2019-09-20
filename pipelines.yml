@@ -1,8 +1,8 @@
  resources:
-   - name: docker_build_repo2
+   - name: docker_build_repo12
      type: GitRepo
      configuration:
-       path: balajils1/newtest
+       path: balajils1/ssldemo
        gitProvider: balaji
    - name: docker_build_info
      type: BuildInfo
@@ -46,7 +46,7 @@
            integrations:
              - name: Art1
            inputResources:
-             - name: docker_build_repo2
+             - name: docker_build_repo12
        - name: docker_push
          type: DockerPush
          configuration:
