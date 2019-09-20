@@ -118,7 +118,7 @@
          type: Bash
          configuration:
            integrations:
-             - mail      
+              - mail      
          execution:
            onSuccess:
              - send_notification mail --recipients "balajis@jfrog.com" --body "built docker image 35.244.19.217:8081/docker/demo:$PIPELINE_NAME.$RUN_NUMBER"
