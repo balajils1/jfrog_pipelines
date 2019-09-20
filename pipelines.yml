@@ -31,6 +31,12 @@
        siteName: "*"
        countryCodes:
          - IN
+    - name: docker_build_info_new
+      type: BuildInfo
+      configuration:
+        sourceArtifactory: Art1
+        buildNumber: 1
+        buildName: dockertest      
         
  pipelines:
    - name: demossl_docker
@@ -72,6 +78,8 @@
              - name: docker_build_info
                trigger: true
            waitUntilFinish: true
+           outputResources:
+             - name: docker_build_info_new 
        - name: bundle_docker
          type: CreateReleaseBundle
          configuration:
@@ -82,7 +90,7 @@
            sign: false
            description: "docker build"
            inputResources:
-             - name: docker_build_info
+             - name: docker_build_info_new
            outputResources:
              - name: unsigned_release_bundle_docker_build
            releaseNotes:
