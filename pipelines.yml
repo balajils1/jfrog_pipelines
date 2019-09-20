@@ -1,5 +1,5 @@
  resources:
-   - name: docker_build_repo
+   - name: docker_build_repo1
      type: GitRepo
      configuration:
        path: balajils1/12345
