@@ -109,15 +109,15 @@
              - name: distribution_rule_docker_build
            integrations:
              - name: dist
-         execution:
-           onStart:
-             - echo "Preparing for work..."
-           onSuccess:
-             - echo "Job well done!"
-       - name: test_step_1
-         type: Bash
-         configuration:
-           integrations:
+         #execution:
+           #onStart:
+            # - echo "Preparing for work..."
+           #onSuccess:
+             #- echo "Job well done!"
+      # - name: test_step_1
+        # type: Bash
+         #configuration:
+           #integrations:
              - name: mail      
          execution:
            onSuccess:
