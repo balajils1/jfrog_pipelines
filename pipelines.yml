@@ -118,7 +118,7 @@
         # type: Bash
          #configuration:
            #integrations:
-             - name: mail      
+             - name: slack      
          execution:
            onSuccess:
               - send_notification slack
