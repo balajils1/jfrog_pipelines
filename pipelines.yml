@@ -31,12 +31,12 @@
        siteName: "*"
        countryCodes:
          - IN
-    - name: docker_build_info_new
-      type: BuildInfo
-      configuration:
-        sourceArtifactory: Art1
-        buildNumber: 1
-        buildName: dockertest      
+   - name: docker_build_info_new
+     type: BuildInfo
+     configuration:
+       sourceArtifactory: Art1
+       buildNumber: 1
+       buildName: dockertest      
         
  pipelines:
    - name: demossl_docker
