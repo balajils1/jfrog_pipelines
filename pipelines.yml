@@ -40,7 +40,7 @@
          configuration:
          # nodePool: aws-demo-pool
            dockerFileLocation: .
-           dockerFileName: Dockerfile
+           dockerFileName: Dockefile
            dockerImageName: '35.244.19.217:8081/docker/demossl12'
            dockerImageTag: $pipeline_name.$run_number
            integrations:
