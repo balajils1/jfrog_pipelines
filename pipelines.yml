@@ -77,7 +77,7 @@
            inputResources:
              - name: docker_build_info
                trigger: true
-           waitUntilFinish: true
+           #waitUntilFinish: true
            outputResources:
              - name: docker_build_info_new 
        - name: bundle_docker
